@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OpenClaw for Windows Users — AI Assistant for Your PC</title>
-<meta name="description" content="Connect OpenClaw to your Windows PC. Browser automation, email management, and AI assistance — all running locally alongside your Windows setup.">
+<title>OpenClaw Windows — Install on Windows | ClawBox</title>
+<meta name="description" content="OpenClaw Windows installation guide: run your AI assistant on Windows 10/11 using WSL2 or Docker Desktop. Complete setup instructions.">
 <meta name="keywords" content="openclaw windows, windows ai assistant hardware, local ai for windows, ai assistant windows pc, openclaw pc integration">
 <link rel="canonical" href="https://openclaw-windows.com/">
-<meta property="og:title" content="OpenClaw for Windows Users — AI Assistant for Your PC">
-<meta property="og:description" content="Connect OpenClaw to your Windows PC. Browser automation, email management, and AI assistance — all running locally alongside your Windows setup.">
+<meta property="og:title" content="OpenClaw Windows — Install on Windows | ClawBox">
+<meta property="og:description" content="OpenClaw Windows installation guide: run your AI assistant on Windows 10/11 using WSL2 or Docker Desktop. Complete setup instructions.">
 <meta property="og:url" content="https://openclaw-windows.com/">
 <meta property="og:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="OpenClaw for Windows Users — AI Assistant for Your PC">
-<meta name="twitter:description" content="Connect OpenClaw to your Windows PC. Browser automation, email management, and AI assistance — all running locally alongside your Windows setup.">
+<meta name="twitter:title" content="OpenClaw Windows — Install on Windows | ClawBox">
+<meta name="twitter:description" content="OpenClaw Windows installation guide: run your AI assistant on Windows 10/11 using WSL2 or Docker Desktop. Complete setup instructions.">
 <meta name="robots" content="index, follow">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "ClawBox", "description": "Connect OpenClaw to your Windows PC. Browser automation, email management, and AI assistance \u2014 all running locally alongside your Windows setup.", "brand": {"@type": "Brand", "name": "OpenClaw"}, "image": "https://openclawhardware.dev/clawbox-1.webp", "url": "https://openclawhardware.dev/", "offers": {"@type": "Offer", "price": "549", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -108,7 +108,7 @@ nav{display:none}
 
 <section class="hero">
   <div class="badge">✨ Powered by NVIDIA Jetson Orin Nano</div>
-  <h1><span>AI</span> Assistant Hardware for Windows Users</h1>
+  <h1><span>OpenClaw Windows</span> — Run AI on Windows 10 &amp; 11</h1>
   <p>Connect OpenClaw to your Windows PC. Browser automation, email management, and AI assistance — all running locally alongside your Windows setup.</p>
   <div>
     <a href="https://openclawhardware.dev/openclaw-hardware" target="_blank" class="cta-btn">Get ClawBox — €549 →</a>
@@ -192,10 +192,24 @@ nav{display:none}
 <section class="section">
   <h2 class="section-title">Common <span>Questions</span></h2>
   <div>
-<div class="faq-item"><div class="faq-q">❓ Does it connect to my Windows PC?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
-<div class="faq-item"><div class="faq-q">❓ Can it access my Windows files?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
-<div class="faq-item"><div class="faq-q">❓ How do I set it up with Windows?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
-  </div>
+<div class="faq-item"><div class="faq-q">❓ Can I install OpenClaw Windows without WSL2?</div><div class="faq-a">OpenClaw requires a Linux environment, so WSL2 or Docker Desktop (which uses WSL2) is necessary on Windows. There's no native Windows build. The good news is WSL2 setup takes about 5 minutes and provides near-native Linux performance for running OpenClaw Windows.</div></div>
+<div class="faq-item"><div class="faq-q">❓ Does OpenClaw Windows support NVIDIA GPU acceleration?</div><div class="faq-a">Yes, on Windows 11 with Docker Desktop and the NVIDIA Container Toolkit. This enables CUDA-based local AI inference within the OpenClaw Windows container. Windows 10 has limited GPU passthrough support. For guaranteed GPU AI performance, use a dedicated <a href="https://openclawhardware.dev/">ClawBox</a>.</div></div>
+<div class="faq-item"><div class="faq-q">❓ Should I run OpenClaw Windows or use a dedicated device?</div><div class="faq-a">OpenClaw Windows is great for testing and occasional use. For always-on AI assistance, a dedicated ClawBox is better — it runs 24/7 without tying up your PC, uses only 15W of power, and provides optimized NVIDIA Jetson GPU compute specifically designed for AI workloads.</div></div>
+</div>
+</section>
+
+<section class="section" id="seo-content">
+<h2 class="section-title">Installing <span>OpenClaw Windows</span></h2>
+<p class="section-sub">Yes, OpenClaw runs on Windows — here's how.</p>
+<div style="color:var(--muted);font-size:.95rem;line-height:1.8;max-width:800px">
+<p><strong>OpenClaw Windows</strong> runs on Windows 10 and Windows 11 through WSL2 (Windows Subsystem for Linux) or Docker Desktop. While OpenClaw is primarily designed for Linux, the Windows compatibility layer provides a smooth experience for users who prefer or need to stay on Windows.</p>
+
+<p>The recommended <strong>OpenClaw Windows</strong> setup uses WSL2 with Ubuntu. Enable WSL2 in Windows settings, install Ubuntu from the Microsoft Store, then follow the standard Linux installation: install Node.js, install OpenClaw via npm, and run the setup wizard. WSL2 provides near-native Linux performance, and OpenClaw runs identically to a native Linux installation.</p>
+
+<p>Alternatively, <strong>OpenClaw Windows</strong> can run via Docker Desktop. Install Docker Desktop for Windows (which uses WSL2 under the hood), pull the OpenClaw Docker image, and start the container with your configuration. This approach is simpler and keeps OpenClaw isolated from your system. Docker Desktop also supports NVIDIA GPU passthrough on Windows 11, enabling local AI inference with CUDA-compatible GPUs.</p>
+
+<p>For the best AI experience beyond <strong>OpenClaw Windows</strong>, consider a dedicated <a href="https://openclawhardware.dev/" title="ClawBox AI Hardware">ClawBox</a>. A dedicated device means your AI assistant runs 24/7 without keeping your Windows PC on, uses minimal power (15W vs. 100-300W for a desktop), and provides purpose-built NVIDIA Jetson GPU compute for fast AI inference. Your Windows machine can then be used for work while the <a href="https://openclawhardware.dev/" title="Buy ClawBox">ClawBox</a> handles AI tasks in the background.</p>
+</div>
 </section>
 
 <section class="section">
