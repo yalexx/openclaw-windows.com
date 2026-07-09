@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://openclaw-windows.com/sitemap.xml
+Disallow: /
